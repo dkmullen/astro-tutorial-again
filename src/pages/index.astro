@@ -1,16 +1,8 @@
-<body>
-  <a href='/'>Home</a>
-  <a href='/blog/'>Blog</a>
-  <a href='/about/'>About</a>
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = 'Home Page, Ya-all';
+---
 
-  <h1>I am Astro</h1>
-  <h1>Home</h1>
-  <h2>... where I live</h2>
-
-  <p>My name is Vincent Hannah.</p>
-
-  <p>
-    This site will update as I complete more of the tutorial, so keep checking
-    back and see how my journey is going!
-  </p>
-</body>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+</BaseLayout>
